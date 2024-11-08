@@ -1,0 +1,81 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 45
+        placeholder_text: "# TODO Напишите функцию calculate_average_age"
+        initial_state:
+          length: 45
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def calculate_average_age(students: list[dict]) -> float:
+              """Функция для вычисления среднего возраста учеников."""
+              total_age = sum([student['age'] for student in students])
+              avg_age = total_age / len(students)
+              return avg_age
+        selected: true
+        status: Solved
+      - offset: 188
+        length: 46
+        placeholder_text: "# TODO Напишите функцию filter_students_by_age"
+        initial_state:
+          length: 46
+          offset: 48
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def filter_students_by_age(students: list[dict], filter_age: float) -> list[dict]:
+              """Функция для фильтрации списка учеников по возрасту."""
+              filtered = [student for student in students if student['age'] < filter_age]
+              return filtered
+        selected: true
+        status: Solved
+      - offset: 826
+        length: 118
+        placeholder_text: |-
+          # TODO Вычислите средний возраст учеников
+              print("Средний возраст учеников:", ...)
+        initial_state:
+          length: 85
+          offset: 582
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          average_age = calculate_average_age(students_list)
+              print("Средний возраст учеников:", average_age)
+        selected: true
+        status: Solved
+      - offset: 1076
+        length: 159
+        placeholder_text: |-
+          # TODO Офильтруйте учеников
+              print("Список учеников с возрастом меньше среднего:")
+              for current_student in ...:
+                  print(current_student['name'])
+        initial_state:
+          length: 156
+          offset: 711
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          filtered_students = filter_students_by_age(students_list, average_age)
+              print("Список учеников с возрастом меньше среднего:")
+              for current_student in filtered_students:
+                  print(current_student['name'])
+        selected: true
+        status: Solved
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 08 Nov 2024 17:57:40 UTC"
+record: -1

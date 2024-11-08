@@ -1,0 +1,36 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+  - name: logic.py
+    visible: true
+    placeholders:
+      - offset: 70
+        length: 214
+        placeholder_text: |-
+          # TODO Поместите код в условие if __name__ == '__main__':
+          print(f"Функция `calculate_square_area` вызвана в модуле {__name__}")  # Печать переменной с названием модуля
+          print(calculate_square_area(2))  # код оставшийся от проверки функции
+        initial_state:
+          length: 237
+          offset: 70
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if __name__ == '__main__':
+              print(f"Функция `calculate_square_area` вызвана в модуле {__name__}")  # Печать переменной с названием модуля
+              print(calculate_square_area(2))  # код оставшийся от проверки функции
+        selected: true
+        status: Solved
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 08 Nov 2024 16:57:51 UTC"
+record: -1

@@ -1,0 +1,44 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 331
+        length: 57
+        placeholder_text: "...  # TODO подсчитать количество выпаданий орлов и решек"
+        initial_state:
+          length: 57
+          offset: 331
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          eagle_count = 0
+              tails_count = 0
+          
+              for _ in range(count):
+                  side = choice(coin)
+                  if side == EAGLE:
+                      eagle_count += 1
+                  else:
+                      tails_count += 1
+        selected: false
+        status: Solved
+      - offset: 394
+        length: 98
+        placeholder_text: "# TODO разделить минимальное число среди орлов и решек на м\
+      аксимальное число и сохранить результат"
+        initial_state:
+          length: 98
+          offset: 394
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          freq = min(eagle_count, tails_count) / max(eagle_count, tails_count)
+              list_freq.append(freq)
+        selected: false
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

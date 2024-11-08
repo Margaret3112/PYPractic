@@ -1,0 +1,39 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 49
+        placeholder_text: "# TODO Импортируйте Counter из модуля collections"
+        initial_state:
+          length: 49
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: from collections import Counter
+        selected: false
+        status: Solved
+      - offset: 694
+        length: 43
+        placeholder_text: "# TODO Подсчитайте фрукты с помощью Counter"
+        initial_state:
+          length: 43
+          offset: 662
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          fruit_counter = Counter(cart_fruits)
+              print(fruit_counter)
+        selected: false
+        status: Solved
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 08 Nov 2024 17:03:31 UTC"
+record: -1

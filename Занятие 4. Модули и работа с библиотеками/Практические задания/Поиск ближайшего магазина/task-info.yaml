@@ -1,0 +1,37 @@
+type: edu
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 316
+        placeholder_text: |-
+          # TODO Отрефакторите код
+          def get_distance(shop_point: tuple[float, float]) -> float:
+              """Функция для вычисления евклидово расстояния до магазина."""
+              return (shop_point[0] ** 2 + shop_point[1] ** 2) ** 0.5
+          
+          
+          def get_nearest_shop(shop_points: list[tuple]) -> tuple:
+              return min(shop_points, key=get_distance)
+        initial_state:
+          length: 316
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def get_nearest_shop(shop_points: list[tuple]) -> tuple:
+              return min(shop_points, key=lambda shop_point: (shop_point[0] ** 2 + shop_point[1] ** 2) ** 0.5)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: tests/test_task.py
+    visible: false
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/__init__.py
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

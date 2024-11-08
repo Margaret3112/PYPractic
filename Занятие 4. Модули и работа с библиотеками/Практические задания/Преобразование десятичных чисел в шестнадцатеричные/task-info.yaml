@@ -1,0 +1,45 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 38
+        placeholder_text: "# TODO Напишите функцию decimal_to_hex"
+        initial_state:
+          length: 38
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def decimal_to_hex() -> dict[int, str]:
+              """
+              Функция для создания словаря с десятичными числами и их шестнадцатеричными представлениями.
+          
+              Возвращаемое значение:
+              dict: Словарь с преобразованными значениями.
+              """
+              return {decimal: hex(decimal) for decimal in range(16)}
+        selected: false
+        status: Unchecked
+      - offset: 72
+        length: 75
+        placeholder_text: "...  # TODO Распечатайте словарь с десятичными и шестнадцат\
+      еричными числами"
+        initial_state:
+          length: 75
+          offset: 72
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          converted_dict = decimal_to_hex()
+              print(converted_dict)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

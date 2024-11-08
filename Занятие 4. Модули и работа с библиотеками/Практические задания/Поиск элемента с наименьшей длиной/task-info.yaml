@@ -1,0 +1,39 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 42
+        placeholder_text: "# TODO  Напишите функцию get_shortest_word"
+        initial_state:
+          length: 42
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def get_shortest_word(words: list[str]) -> str:
+              return min(words, key=len)
+        selected: true
+        status: Failed
+      - offset: 222
+        length: 66
+        placeholder_text: "...  # TODO Найдите самое короткое слово"
+        initial_state:
+          length: 40
+          offset: 161
+        initialized_from_dependency: false
+        encrypted_possible_answer: get_shortest_word(words_list)
+        selected: true
+        status: Failed
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Failed
+feedback:
+  message: Error during execution
+  time: "Fri, 08 Nov 2024 18:04:56 UTC"
+record: -1

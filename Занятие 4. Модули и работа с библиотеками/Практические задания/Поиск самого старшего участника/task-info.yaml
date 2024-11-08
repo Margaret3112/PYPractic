@@ -1,0 +1,36 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 46
+        placeholder_text: "# TODO Напишите функцию get_oldest_participant"
+        initial_state:
+          length: 46
+          offset: 0
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          def get_oldest_participant(participants):
+              return max(participants, key=lambda item: item["age"])
+        selected: false
+        status: Unchecked
+      - offset: 495
+        length: 45
+        placeholder_text: "...  # TODO Найдите самого старшего участника"
+        initial_state:
+          length: 45
+          offset: 495
+        initialized_from_dependency: false
+        encrypted_possible_answer: get_oldest_participant(participants_list)
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

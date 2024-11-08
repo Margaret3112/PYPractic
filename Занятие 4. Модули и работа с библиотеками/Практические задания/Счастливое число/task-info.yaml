@@ -1,0 +1,41 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 43
+        length: 60
+        placeholder_text: "...  # TODO проверить что число шестизначное и положительно\
+      е"
+        initial_state:
+          length: 60
+          offset: 43
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          if num <= 0:
+                  raise ValueError("Число не является положительным :(")
+              if len(str(num)) != 6:
+                  raise ValueError("Число не шестизначное :(")
+        selected: false
+        status: Unchecked
+      - offset: 109
+        length: 46
+        placeholder_text: "...  # TODO проверить счастливое число или нет"
+        initial_state:
+          length: 46
+          offset: 109
+        initialized_from_dependency: false
+        encrypted_possible_answer: |-
+          list_digits = [int(digit) for digit in str(num)]
+              return sum(list_digits[:3]) == sum(list_digits[3:])
+        selected: false
+        status: Unchecked
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1
